@@ -1,0 +1,76 @@
+.mastText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 75vh;
+  text-align: center;
+  background-color: black;
+  margin-top: 0;
+}
+
+.mastTitle {
+  font-size: 5rem;
+  font-weight: normal;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.mastSubtitle {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  color: white;
+  line-height: 1.25;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@media screen and (max-width: 600px) {
+  .mastSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .mastTitle {
+    font-size: 3rem;
+  }
+}

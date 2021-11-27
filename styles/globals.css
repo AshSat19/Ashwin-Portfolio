@@ -1,16 +1,27 @@
+/* Google Font - Josefin Sans */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+/* PrimeReact, PrimeFlex */
+@import url("primereact/resources/themes/md-dark-deeppurple/theme.css");
+@import url("primereact/resources/primereact.min.css");
+@import url("primeicons/primeicons.css");
+@import url("primeflex/primeflex.css");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background-color: #121212;
+  color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
+}
+
+*:not(.pi) {
+  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }

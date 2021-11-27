@@ -1,0 +1,37 @@
+.header {
+  padding: 10px 16px;
+  background: #000;
+  color: whitesmoke;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bigNav {
+  display: flex;
+  align-items: center;
+}
+
+.smallNav {
+  display: none;
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .bigNav {
+    display: none;
+  }
+
+  .smallNav {
+    display: block;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+}

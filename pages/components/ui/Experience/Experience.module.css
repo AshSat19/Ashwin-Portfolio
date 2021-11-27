@@ -1,0 +1,17 @@
+.expTimeline {
+  display: block;
+}
+
+.expAccordion {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .expTimeline {
+    display: none;
+  }
+
+  .expAccordion {
+    display: block;
+  }
+}

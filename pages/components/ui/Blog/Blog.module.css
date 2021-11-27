@@ -1,0 +1,29 @@
+.listImg {
+  width: 20vw;
+  height: auto;
+  margin: 0 1rem;
+}
+
+.listDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bigView {
+  display: block;
+}
+
+.smallView {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .bigView {
+    display: none;
+  }
+
+  .smallView {
+    display: block;
+  }
+}

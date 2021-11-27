@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import HomePage from "./components/HomePage/HomePage";
+import BlogsPage from "./components/BlogsPage/BlogsPage";
 
-export default function Home() {
+export default function Blogs() {
   return (
     <Fragment>
       <Head>
-        <title>Ashwin Sathian | Web Application Developer</title>
+        <title>Blogs - Ashwin Sathian | Web Application Developer</title>
         <meta
           name="description"
           content="I'm a Web Application Developer based out of India. I work primarily on the MEAN Stack. Here, you can find my profile and portfolio"
@@ -17,11 +17,14 @@ export default function Home() {
         />
 
         {/* Link Preview Metadata for Facebook */}
-        <meta property="og:url" content="https://ashwinsathian-4d992.web.app" />
+        <meta
+          property="og:url"
+          content="https://ashwinsathian-4d992.web.app/blogs"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Ashwin Sathian | Web Application Developer"
+          content="Blogs - Ashwin Sathian | Web Application Developer"
         />
         <meta
           property="og:description"
@@ -30,7 +33,7 @@ export default function Home() {
         <meta property="og:image" content="./static/Preview.png" />
         <meta
           property="og:image:alt"
-          content="Ashwin Sathian | Web Application Developer"
+          content="Blogs - Ashwin Sathian | Web Application Developer"
         />
         <meta property="og:image:type" content="img/jpg" />
 
@@ -44,7 +47,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <HomePage></HomePage>;
+      <BlogsPage></BlogsPage>;
     </Fragment>
   );
 }

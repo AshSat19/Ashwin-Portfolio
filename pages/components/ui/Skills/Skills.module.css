@@ -1,0 +1,21 @@
+.topSkillCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.topSkillImg {
+  height: 10vw;
+  width: auto;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .topSkillImg {
+    height: 20vw;
+    margin: 0.5rem;
+  }
+}
